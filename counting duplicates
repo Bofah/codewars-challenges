@@ -1,0 +1,26 @@
+function duplicateCount(text){
+  //...
+  let a = []
+  count = 0;
+  num = 0;
+  for (let i=0; i<text.length; i++){
+      if (a.includes(text[i])){
+          continue
+      }
+      else{
+        a.push(text[i]);
+        for (let j=0;j<text.length; j++){
+            if (text[i] == text[j]){
+                count+=1
+            }
+        }
+        if (count>1){
+            num++
+        }
+        count = 0;
+      } 
+  }
+  console.log(num)
+}
+
+duplicateCount('aaadddfffggghhh')
