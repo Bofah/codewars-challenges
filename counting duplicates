@@ -1,5 +1,6 @@
 function duplicateCount(text){
   //...
+  text= text.toLowerCase();
   let a = []
   count = 0;
   num = 0;
