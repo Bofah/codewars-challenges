@@ -1,0 +1,18 @@
+function findOutlier(integers){
+  let a = []
+  let b = []
+  //your code here
+    for (let i = 0; i<integers.length; i++){
+      if (integers[i]%2 == 0) {
+          a.push(integers[i])
+         }
+      else {
+          b.push(integers[i])
+        }
+    }
+    if (a.length < 2){
+      return (a[0]) 
+    }else{
+      return (b[0]) 
+    }
+  }
